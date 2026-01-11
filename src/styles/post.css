@@ -39,16 +39,26 @@
   margin: 3.75em 0 1.75em 0;
 }
 
-.prose h2:before {
+.prose h2::before,
+.prose h3::before {
+  height: 2px;
+  top: calc(50% - 1px);
+
   content: '';
   position: absolute;
 
-  top: calc(50% - 1px);
-  left: -2.5rem;
-
-  width: 2rem;
-  height: 2px;
   background-color: var(--text-tertiary);
+
+  left: calc(-1 * var(--lh) - 0.5rem);
+  width: var(--lh);
+}
+
+.prose h2::before {
+  --lh: 2rem;
+}
+
+.prose h3::before {
+  --lh: 1.25rem;
 }
 
 /* Bold text */
