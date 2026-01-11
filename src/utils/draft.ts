@@ -5,7 +5,12 @@ import { getCollection, type CollectionEntry } from 'astro:content'
  */
 export async function getFilteredPosts() {
   const posts = await getCollection('posts')
-  return posts.filter((post: CollectionEntry<'posts'>) => !post.id.startsWith('_'))
+
+  if (process.env.NODE_ENV === 'production') {
+    return posts.filter((post) => !post.id.startsWith('_'))
+  }
+
+  return posts
 }
 
 /**

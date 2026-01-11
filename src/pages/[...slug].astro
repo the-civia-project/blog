@@ -1,12 +1,10 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content'
 import PostLayout from '@/layouts/PostLayout.astro'
-import { render } from 'astro:content'
+import { getFilteredPosts } from '@/utils/draft'
+import { type CollectionEntry, render } from 'astro:content'
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts')
-  return posts
-    .filter((post) => !post.id.startsWith('_'))
+  return (await getFilteredPosts())
     .map((post) => ({
       params: { slug: post.id },
       props: post
