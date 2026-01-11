@@ -1,5 +1,6 @@
 ---
 title: 'Draft Example'
+description: 'Example draft post for testing purposes.'
 pubDate: '2025-07-09'
 ---
 

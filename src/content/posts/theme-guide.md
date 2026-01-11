@@ -1,5 +1,6 @@
 ---
 title: 'Theme Guide'
+description: 'A guide to using and customizing the Chiri blog theme.'
 pubDate: '2025-07-10'
 ---
 

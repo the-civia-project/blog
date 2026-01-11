@@ -31,10 +31,24 @@
 .prose h3,
 .prose h4,
 .prose h5 {
+  position: relative;
+
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
   line-height: 1.75;
   margin: 3.75em 0 1.75em 0;
+}
+
+.prose h2:before {
+  content: '';
+  position: absolute;
+
+  top: calc(50% - 1px);
+  left: -2.5rem;
+
+  width: 2rem;
+  height: 2px;
+  background-color: var(--text-tertiary);
 }
 
 /* Bold text */

@@ -1,11 +1,15 @@
 ---
-import { themeConfig } from '@/config'
+import Logo from '@/components/ui/Logo.astro'
 import ThemeToggle from '@/components/ui/ThemeToggle.astro'
+import { themeConfig } from '@/config'
 ---
 
 <header>
   <nav>
-    <a href="/">{themeConfig.site.title}</a>
+    <div class="logo">
+      <Logo size='medium' />
+      <a href="/">{themeConfig.site.title}</a>
+    </div>
     <ThemeToggle />
   </nav>
 </header>
@@ -19,10 +23,17 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
     align-items: center;
   }
   header a {
+    font-size: var(--font-size-l);
     font-weight: var(--font-weight-bold);
     color: var(--text-primary);
     text-decoration: none;
     min-width: 3rem;
     display: inline-block;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--serif);
   }
 </style>

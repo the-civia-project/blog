@@ -1,5 +1,6 @@
 ---
 title: 'Embedded Content'
+description: 'How to embed various media types in your posts.'
 pubDate: '2025-06-06'
 ---
 

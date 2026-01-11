@@ -1,5 +1,6 @@
 ---
 title: 'Markdown Style Guide'
+description: 'Guidelines and examples for writing Markdown content.'
 pubDate: '2025-06-28'
 ---
 

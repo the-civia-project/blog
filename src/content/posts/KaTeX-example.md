@@ -1,5 +1,6 @@
 ---
 title: 'KaTeX Examples'
+description: 'Examples of using KaTeX for mathematical expressions.'
 pubDate: '2025-05-19'
 ---
 

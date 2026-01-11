@@ -1,5 +1,6 @@
 ---
 title: 'The TR-808 Story'
+description: 'The history and impact of the Roland TR-808 drum machine.'
 pubDate: '2025-05-10'
 ---
 

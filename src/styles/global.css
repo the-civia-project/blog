@@ -6,9 +6,9 @@
   --content-width: 25rem;
 
   /* Typography */
-  --sans: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
-  --serif: Besley, Baskerville, Georgia, 'Times New Roman', Times, serif;
-  --mono: 'SF Mono', SFMono-Regular, monospace;
+  --sans: 'Montserrat Variable', -apple-system, BlinkMacSystemFont, sans-serif;
+  --serif: Gabriela, Baskerville, Georgia, 'Times New Roman', Times, serif;
+  --mono: 'Fira Code Variable', monospace;
 
   --font-size-s: 0.8125rem;
   --font-size-m: 0.9375rem;
