@@ -1,3 +1,4 @@
+import { themeConfig } from '@/config'
 import { OGImageRoute } from 'astro-og-canvas'
 import { getCollection, type CollectionEntry } from 'astro:content'
 
@@ -23,6 +24,14 @@ const pages = Object.fromEntries(
     entry.data
   ])
 )
+
+// OpenGraph for the index page
+// Adding a default page at the root path
+pages.index = {
+  title: themeConfig.site.title,
+  description: themeConfig.site.description,
+  pubDate: new Date()
+}
 
 export const { getStaticPaths, GET } = await OGImageRoute({
   param: 'route',

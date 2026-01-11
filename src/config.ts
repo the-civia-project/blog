@@ -4,7 +4,7 @@ export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
     website: 'https://blog.theciviaproject.org/', // Site domain
-    title: 'The Civia Project', // Site title
+    title: 'The Civia Project Blog', // Site title
     author: 'Alexandru Ifrim', // Author name
     description: 'Thoughts, reasons, ideas and news about The Civia Project.', // Site description
     language: 'en-US' // Default language
