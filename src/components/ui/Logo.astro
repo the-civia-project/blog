@@ -1,13 +1,13 @@
 ---
-import LogoSVG from "../../assets/logo.svg";
+import LogoSVG from '../../assets/logo.svg'
 
 interface Props {
-    size?: "small" | "medium" | "big";
+  size?: 'small' | 'medium' | 'big'
 }
 
-const { size = "big" } = Astro.props;
+const { size = 'big' } = Astro.props
 
-const sizePx = size === "big" ? 64 : size === "medium" ? 48 : 32;
+const sizePx = size === 'big' ? 64 : size === 'medium' ? 48 : 32
 ---
 
 <LogoSVG width={sizePx} height={sizePx} />
